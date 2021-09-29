@@ -1,0 +1,20 @@
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 0fr 7fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav header"
+    "nav app";
+}
+.header {
+  grid-area: header;
+}
+.nav {
+  grid-area: nav;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+.content {
+  grid-area: app;
+}

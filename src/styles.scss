@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  ::-webkit-scrollbar {
+    width: 11px;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+$font: Helvetica, sans-serif;
+$primary: #1eaedb;
+$bgColor-light: #2a2b2e;
+$secondary-color: #282c31;
+$main-color: #1eaedb;
+$content-background: rgba(25, 25, 25, 1);
+//@include clickable-img-link("1.5rem 0.7rem 0 0.7rem");
+@mixin content-area {
+  width: 10px;
+  height: 90vh;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin clickable-img-link($padding) {
+  a {
+    padding: #{$padding};
+    img {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@mixin clickable() {
+  cursor: pointer;
+}

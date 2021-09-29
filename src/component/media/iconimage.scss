@@ -1,0 +1,12 @@
+@import "../../styles.scss";
+
+.icon-image {
+  margin: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  @include clickable;
+  &:hover {
+    width: 3rem;
+    height: 3rem;
+  }
+}

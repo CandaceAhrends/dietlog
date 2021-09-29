@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  z-index: 999;
+  background: #333;
+  height: 100%;
+
+  &-close-icon {
+    padding: 0.5rem;
+    text-align: end;
+  }
+  &-children {
+    padding: 0 1rem;
+  }
+  &-open {
+    width: 15rem;
+  }
+  transition: width 0.2s ease-in-out;
+}

@@ -1,0 +1,9 @@
+.side-popout {
+  width: 20rem;
+  z-index: 999999;
+  height: 99vh;
+  background: #333;
+  position: fixed;
+  top: 0;
+  transition: all 1s ease-out;
+}
