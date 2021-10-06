@@ -1,7 +1,7 @@
 import React from "react";
 import { StoreContext } from "../AppContext";
 import { LOGOUT_ACTION } from "../actions";
-
+import Nav from "../component/nav/Nav";
 import "./header.scss";
 
 const Header = () => {
@@ -15,7 +15,10 @@ const Header = () => {
   };
   return (
     <ul className="header">
-      <li>Diet Log</li>
+      <li>
+        <Nav></Nav>
+      </li>
+
       <li>
         {state.isAuthenticated ? <span onClick={logout}>Sign out</span> : null}
       </li>

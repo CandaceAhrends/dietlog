@@ -4,6 +4,9 @@ body {
     width: 11px;
   }
 }
+* {
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
 }
@@ -15,11 +18,11 @@ $primary: #1eaedb;
 $bgColor-light: #2a2b2e;
 $secondary-color: #282c31;
 $main-color: #1eaedb;
-$content-background: rgba(25, 25, 25, 1);
+$content-background: rgb(26, 29, 41);
+
 //@include clickable-img-link("1.5rem 0.7rem 0 0.7rem");
 @mixin content-area {
-  width: 10px;
-  height: 90vh;
+  width: 100%;
 }
 @mixin flex-center {
   display: flex;

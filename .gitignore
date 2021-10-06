@@ -1,1 +1,11 @@
-node_modules
+node_modules/
+binarySearch.js
+bubble.js
+buildTreeNodes.js
+longestSubIn2Arr.js
+maxSubArray.js
+mergeSort.js
+pairWithSum.js
+permute.js
+palendrone.js
+rotate.js

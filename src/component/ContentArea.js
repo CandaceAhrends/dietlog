@@ -40,7 +40,7 @@ const LogoutListener = () => {
 };
 const ContentArea = () => {
   return (
-    <main>
+    <main class="content-area">
       <Router history={history}>
         <Route path="*">
           <LogoutListener></LogoutListener>

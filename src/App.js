@@ -1,6 +1,6 @@
 import { hot } from "react-hot-loader";
 import React from "react";
-import Nav from "./component/nav/Nav";
+
 import Header from "./component/Header";
 import ContentArea from "./component/ContentArea";
 import { createBrowserHistory } from "history";
@@ -20,6 +20,7 @@ const theme = createTheme({
   },
 });
 const history = createBrowserHistory();
+
 const App = () => {
   const [state, dispatch] = React.useReducer(Reducer, initialState);
 
@@ -28,7 +29,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <div className="grid-container">
           <Header></Header>
-          <Nav></Nav>
+
           <ContentArea></ContentArea>
         </div>
       </ThemeProvider>

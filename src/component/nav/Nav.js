@@ -1,14 +1,14 @@
 import React from "react";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import MenuContainer from "./popoutmenu/MenuContainer";
-import "./menu.scss";
+import "./nav.scss";
 
 const Nav = () => {
-  const matches = useMediaQuery("(min-width:800px)");
+  const matches = useMediaQuery("(min-width:1500px)");
 
   return (
     <div className="nav">
-      {matches ? <p>test</p> : <MenuContainer></MenuContainer>}
+      {matches ? <p>not implemented</p> : <MenuContainer></MenuContainer>}
     </div>
   );
 };

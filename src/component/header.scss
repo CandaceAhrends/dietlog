@@ -2,12 +2,10 @@
 .header {
   display: flex;
   background: #1d1f21;
-  height: 50px;
-  width: calc(100vw - 7rem);
-  margin: 0;
+  padding: 0;
+
   li {
     color: white;
-    padding: 1rem;
     &:last-child {
       margin-left: auto;
       @include clickable();
