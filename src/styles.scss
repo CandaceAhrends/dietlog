@@ -1,8 +1,16 @@
+$font: "venir-Heavy, sans-serif";
+$primary: #1eaedb;
+$bgColor-light: #2a2b2e;
+$secondary-color: #282c31;
+$main-color: #1eaedb;
+$content-background: rgb(26, 29, 41);
+
 body {
   margin: 0;
   ::-webkit-scrollbar {
     width: 11px;
   }
+  font-family: $font;
 }
 * {
   box-sizing: border-box;
@@ -10,15 +18,15 @@ body {
 a {
   text-decoration: none;
 }
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
 ul {
   list-style: none;
 }
-$font: Helvetica, sans-serif;
-$primary: #1eaedb;
-$bgColor-light: #2a2b2e;
-$secondary-color: #282c31;
-$main-color: #1eaedb;
-$content-background: rgb(26, 29, 41);
 
 //@include clickable-img-link("1.5rem 0.7rem 0 0.7rem");
 @mixin content-area {

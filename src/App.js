@@ -1,8 +1,7 @@
 import { hot } from "react-hot-loader";
 import React from "react";
 
-import Header from "./component/Header";
-import ContentArea from "./component/ContentArea";
+import AppRoutes from "./AppRoutes";
 import { createBrowserHistory } from "history";
 import { StoreContext, Auth, initialState } from "./AppContext";
 import Reducer from "./AppReducer";
@@ -28,9 +27,7 @@ const App = () => {
     <StoreContext.Provider value={[state, dispatch, Auth, history]}>
       <ThemeProvider theme={theme}>
         <div className="grid-container">
-          <Header></Header>
-
-          <ContentArea></ContentArea>
+          <AppRoutes></AppRoutes>
         </div>
       </ThemeProvider>
     </StoreContext.Provider>

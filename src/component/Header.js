@@ -15,11 +15,11 @@ const Header = () => {
   };
   return (
     <ul className="header">
-      <li>
+      <li className="nav">
         <Nav></Nav>
       </li>
 
-      <li>
+      <li className="logout">
         {state.isAuthenticated ? <span onClick={logout}>Sign out</span> : null}
       </li>
     </ul>

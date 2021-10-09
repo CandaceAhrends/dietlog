@@ -1,6 +1,7 @@
 @import "../../styles.scss";
 .nav {
   width: 4.5rem;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -13,5 +14,6 @@
   li {
     color: $primary;
     text-align: center;
+    padding: 1rem 0;
   }
 }

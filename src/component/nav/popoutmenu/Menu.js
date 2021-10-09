@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 
-import "./popoutmenu.scss";
+import "./menu.scss";
 
-const Menu = ({ children }) => {
+const Menu = ({ render }) => {
   return (
-    <div className="menu">
-      <span className="menu-children">{children}</span>
-    </div>
+    <nav className="menu">
+      <span className="menu-children">{render()}</span>
+    </nav>
   );
 };
 
