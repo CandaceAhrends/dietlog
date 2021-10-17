@@ -1,13 +1,10 @@
 import { hot } from "react-hot-loader";
 import React from "react";
+import NewsFeed from "./component/facebook/NewsFeed";
+import { AppCtx } from "./appContext";
 
-import AppRoutes from "./AppRoutes";
-import { createBrowserHistory } from "history";
-import { StoreContext, Auth, initialState } from "./AppContext";
-import Reducer from "./AppReducer";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 
-import "./app.scss";
 const theme = createTheme({
   palette: {
     primary: {
@@ -18,19 +15,24 @@ const theme = createTheme({
     },
   },
 });
-const history = createBrowserHistory();
 
 const App = () => {
-  const [state, dispatch] = React.useReducer(Reducer, initialState);
-
+  const [userInfo, setUserInfo] = React.useState({});
+  React.useEffect(() => {
+    setUserInfo({
+      userId: 123,
+      firstName: "Candace",
+      lastName: "Ahrends",
+      permissions: {},
+      lastLogin: null,
+    });
+  }, []);
   return (
-    <StoreContext.Provider value={[state, dispatch, Auth, history]}>
-      <ThemeProvider theme={theme}>
-        <div className="grid-container">
-          <AppRoutes></AppRoutes>
-        </div>
-      </ThemeProvider>
-    </StoreContext.Provider>
+    <ThemeProvider theme={theme}>
+      <AppCtx.Provider value={userInfo}>
+        <NewsFeed></NewsFeed>
+      </AppCtx.Provider>
+    </ThemeProvider>
   );
 };
 export default hot(module)(App);

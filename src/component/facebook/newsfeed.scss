@@ -1,0 +1,49 @@
+@import "../../styles.scss";
+
+main {
+  background-color: #18191a;
+  color: white;
+  font-family: $facebook-font;
+  margin: auto;
+  max-width: 1200px;
+  grid-area: content;
+
+  .news {
+    &-feed {
+      display: grid;
+      margin: 0 auto;
+      grid-gap: 20px;
+      width: 66%;
+
+      grid-template-areas: "content";
+      grid-template-columns: repeat(2, minmax(55%, 1fr));
+    }
+    &-item {
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+
+      font-size: 150%;
+    }
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .dummy-side-bar {
+    width: 15rem;
+    border: solid;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  main {
+    .news {
+      &-feed {
+        grid-template-columns: repeat(1, 1fr);
+        width: 475px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

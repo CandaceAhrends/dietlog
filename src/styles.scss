@@ -1,16 +1,15 @@
-$font: "venir-Heavy, sans-serif";
-$primary: #1eaedb;
-$bgColor-light: #2a2b2e;
-$secondary-color: #282c31;
-$main-color: #1eaedb;
-$content-background: rgb(26, 29, 41);
+$facebook-text: #e4e6eb;
+$facebook-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  sans-serif;
+$roboto-font: "Roboto, sans-serif";
 
 body {
   margin: 0;
+  background-color: #18191a;
   ::-webkit-scrollbar {
     width: 11px;
   }
-  font-family: $font;
+  font-family: $facebook-font;
 }
 * {
   box-sizing: border-box;
@@ -28,10 +27,6 @@ ul {
   list-style: none;
 }
 
-//@include clickable-img-link("1.5rem 0.7rem 0 0.7rem");
-@mixin content-area {
-  width: 100%;
-}
 @mixin flex-center {
   display: flex;
   align-items: center;

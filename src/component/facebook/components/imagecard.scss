@@ -1,0 +1,16 @@
+@import "../../../styles.scss";
+.card {
+  @include clickable();
+  margin: 0 auto;
+  border-radius: 8px;
+  height: 370;
+  padding: 0;
+  background-color: #252526;
+
+  li {
+    max-width: 436px;
+    img {
+      border-radius: 8px;
+    }
+  }
+}
